@@ -1,0 +1,26 @@
+package com.customer.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.customer.entity.CustomerEntity;
+import com.customer.services.CustomerServices;
+
+@Controller
+@RequestMapping(path = "/update")
+public class UpdateCustomerController {
+
+	@Autowired
+	private CustomerServices customerServices;
+
+	public String updateForm() {
+		return "updatecustomer.jsp";
+	}
+
+	public String updateDisplay(CustomerEntity customer) {
+		customerServices.updateCustomer(customer);
+		return "updatecustomerdisplay.jsp";
+	}
+
+}

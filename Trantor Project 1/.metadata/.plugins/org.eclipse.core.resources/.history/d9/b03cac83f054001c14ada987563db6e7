@@ -1,0 +1,5 @@
+document.getElementById("select1").onchange=function() {
+    document.getElementById("select2").value=this.options[this.selectedIndex].getAttribute("data-sync");
+        document.getElementById("select3").value=this.options[this.selectedIndex].getAttribute("data-sync");
+}
+document.getElementById("select1").onchange();

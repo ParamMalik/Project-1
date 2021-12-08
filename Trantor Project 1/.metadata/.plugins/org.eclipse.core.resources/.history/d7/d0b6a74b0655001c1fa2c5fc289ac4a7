@@ -1,0 +1,33 @@
+package com.customer.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.customer.dao.CustomerDAO;
+import com.customer.entity.CustomerEntity;
+
+@Service
+public class CustomerServices {
+
+	@Autowired
+	private CustomerDAO customerDAO;
+
+	public void addCustomer(CustomerEntity customer) {
+		customerDAO.addCustomer(customer);
+	}
+
+	public void updateCustomer(CustomerEntity customer) {
+		customerDAO.updateCustomer(customer);
+	}
+
+	public void removeCustomer(CustomerEntity customer) {
+		customerDAO.removeCustomer(customer);
+	}
+
+	public List<CustomerEntity> searchCustomer() {
+		return customerDAO.searchCustomer();
+	}
+
+}

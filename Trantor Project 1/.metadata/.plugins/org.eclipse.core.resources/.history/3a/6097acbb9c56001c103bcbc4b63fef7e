@@ -1,0 +1,23 @@
+
+
+
+
+
+document.getElementById("arrPrint").innerHTML = JSON.stringify(states, null, 2);
+
+
+
+<c:forEach var="listValue" items="${stateList}">
+
+<option>${listValue.stateName}</option>
+
+</c:forEach>
+
+
+
+
+	var states = new Array();
+			<c:forEach items="${stateList}" var="state" varStatus="status">
+		       	optionArray = new Object();
+			  states.push( ${ stateList.stateName});
+			</c:forEach>

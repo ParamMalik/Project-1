@@ -1,0 +1,14 @@
+package com.javatraining.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.customer.dao.CustomerDAO;
+
+@Service
+public class CustomerServices {
+	
+	@Autowired
+	private CustomerDAO customerDAO;
+
+}

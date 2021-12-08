@@ -1,0 +1,21 @@
+package com.customer.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.customer.entity.CustomerEntity;
+import com.customer.repository.CustomerRepository;
+
+@Repository
+public class CustomerDAO {
+	
+	@Autowired
+	private CustomerRepository customerRepository;
+	
+	public void addCustomer(CustomerEntity customer) {
+		customerRepository.save(customer);
+		
+	}
+	
+
+}

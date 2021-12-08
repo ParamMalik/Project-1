@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Here</title>
+</head>
+<body>
+	<form action="search" method="post">
+
+		<div>
+			<select name="select1" id="select1">
+				<option value="1" data-sync="1">Status 1</option>
+				<option value="2" data-sync="2">Status 2</option>
+			</select>
+		</div>
+		<div>
+			<select name="select2" id="select2">
+				<option value="1">offer 1</option>
+				<option value="1">offer 2</option>
+				<option value="1">offer 3</option>
+				<option value="1">offer 4</option>
+				<option value="1">offer 5</option>
+				<option value="2">offer 6</option>
+				<option value="2">offer 7</option>
+				<option value="2">offer 8</option>
+				<option value="2">offer 9
+				<option>
+			</select>
+		</div>
+		<div>
+			<select name="select3" id="select3">
+				<option value="1">option 1</option>
+				<option value="2">option 2</option>
+				<option value="1">option 3</option>
+				<option value="2">option 4</option>
+			</select>
+		</div>
+	</form>
+
+</body>
+</html>

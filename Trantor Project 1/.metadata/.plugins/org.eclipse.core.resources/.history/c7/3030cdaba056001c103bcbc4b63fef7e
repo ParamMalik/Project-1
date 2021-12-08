@@ -1,0 +1,9 @@
+package com.customer.projectcustomer;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.customer.entity.UsaStateEntity;
+
+public interface UsaStateRepo extends CrudRepository<UsaStateEntity, Integer>{
+
+}

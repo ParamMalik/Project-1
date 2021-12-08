@@ -1,0 +1,9 @@
+package com.javatraining.entity;
+
+
+public class EmployeeEntity {
+	private Integer customerId;
+	private String name;
+	
+
+}

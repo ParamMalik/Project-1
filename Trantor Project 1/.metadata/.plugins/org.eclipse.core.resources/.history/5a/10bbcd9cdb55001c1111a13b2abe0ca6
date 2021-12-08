@@ -1,0 +1,48 @@
+package com.customer.dao;
+
+import java.util.ArrayList;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.customer.entity.CustomerEntity;
+import com.customer.projectcustomer.CustomerRepository;
+
+@Repository
+public class CustomerDAO {
+
+	@Autowired
+	private CustomerRepository customerRepository;
+
+	@Transactional
+	public void addCustomer(CustomerEntity customer) {
+		customerRepository.save(customer);
+
+	}
+
+	@Transactional
+	public void removeCustomer(CustomerEntity customer) {
+		customerRepository.delete(customer);
+	}
+
+	@Transactional
+	public ArrayList<CustomerEntity> searchCustomerById(Integer id) {
+
+		return customerRepository.findByCustomerId(id);
+	}
+
+	@Transactional
+	public ArrayList<CustomerEntity> searchCustomer() {
+
+		return customerRepository.findAll();
+
+	}
+
+	@Transactional
+	public void updateCustomer(CustomerEntity customer) {
+		customerRepository.save(customer);
+	}
+
+}

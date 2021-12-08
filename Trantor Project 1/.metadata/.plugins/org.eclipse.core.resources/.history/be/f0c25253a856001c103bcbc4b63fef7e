@@ -1,0 +1,13 @@
+//package com.customer.projectcustomer;
+//
+//import java.util.ArrayList;
+//
+//import org.springframework.data.repository.CrudRepository;
+//
+//import com.customer.entity.StateEntity;
+//
+//public interface StateRepo extends CrudRepository<StateEntity, Integer> {
+//	
+//	public ArrayList<StateEntity> findAll();
+//
+//}

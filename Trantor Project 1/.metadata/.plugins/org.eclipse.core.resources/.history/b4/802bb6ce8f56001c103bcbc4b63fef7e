@@ -1,0 +1,55 @@
+package com.customer.controllers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.customer.entity.CountryEntity;
+import com.customer.entity.CustomerEntity;
+import com.customer.entity.StateEntity;
+import com.customer.services.CustomerServices;
+
+@RestController
+@RequestMapping(path = "/add")
+public class AddCustomerController {
+
+	@Autowired
+	private CustomerServices customerServices;
+
+//	@GetMapping(produces = "application/json")
+//	public List<StateEntity> getRecords() {
+//		return customerServices.getState();
+//	}
+	
+	@GetMapping
+	public String saveForm(CustomerEntity customer, HttpServletRequest req) {
+
+		ArrayList<CountryEntity> countryList = customerServices.getCountry();
+
+		ArrayList<StateEntity> stateList = customerServices.getState();
+
+		req.setAttribute("countryList", countryList);
+		req.setAttribute("stateList", stateList);
+
+		return "addcustomer.jsp";
+
+	}
+
+	@PostMapping
+	public String saveDisplay(CustomerEntity customer, HttpServletRequest request) {
+		System.out.println(customer.getCustomerNo());
+		request.setAttribute("customer", customer);
+		customerServices.addCustomer(customer);
+
+		return "addcustomerdisplay.jsp";
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package com.customer.entity;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "CUSTOMER_DETAILS_TABLE")
+public class CustomerEntity {
+	@Id
+	@Column(name = "customer_id")
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "CUST_SEQ")
+	@SequenceGenerator(sequenceName = "customer_seq", allocationSize = 1, name = "CUST_SEQ")
+	private Integer customerId;
+	@Column(name = "customer_no")
+	private Integer customerNo;
+	@Column(name = "customer_name")
+	private String customerName;
+	@Column(name = "customer_type")
+	private String customerType;
+	@Column(name = "customer_phone")
+	private Integer customerPhone;
+	@Column(name = "street")
+	private String street;
+	@Column(name = "city")
+	private String city;
+	@Column(name = "state")
+	private String state;
+	@Column(name = "country")
+	private String country;
+	@Column(name = "created_by")
+	private String createdBy;
+	@Column(name = "created_on")
+	private Date createdOn;
+	@Column(name = "updated_by")
+	private String updatedBy;
+	@Column(name = "customer_on")
+	private Date updatedOn;
+
+}

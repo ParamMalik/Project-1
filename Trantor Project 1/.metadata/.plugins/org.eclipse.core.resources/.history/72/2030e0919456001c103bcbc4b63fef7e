@@ -1,0 +1,21 @@
+
+
+
+var states = new Array();
+<c:forEach items="${stateList}" var="state" varStatus="status">
+	stateDetails = new Object();
+	stateDetails.country_id = ${stateList.countryId};
+	stateDetails.state = ${stateList.stateName}
+	states.push(countryDetails);
+</c:forEach>
+
+
+document.getElementById("arrPrint").innerHTML = JSON.stringify(states, null, 2);
+
+
+
+<c:forEach var="listValue" items="${stateList}">
+
+<option>${listValue.stateName}</option>
+
+</c:forEach>

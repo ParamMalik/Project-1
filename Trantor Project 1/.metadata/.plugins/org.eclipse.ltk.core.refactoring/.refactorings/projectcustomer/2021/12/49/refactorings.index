@@ -1,0 +1,28 @@
+1638532140240	Rename resource 'delete.jsp'
+1638532161148	Rename resource 'save.jsp'
+1638532172720	Rename resource 'search.jsp'
+1638532181960	Rename resource 'update.jsp'
+1638535550653	Rename type 'DeleteEmployeeController'
+1638535570128	Rename type 'SaveEmployeeController'
+1638535584486	Rename type 'SearchEmployeeController'
+1638535598729	Rename type 'UpdateEmployeeController'
+1638535619527	Rename type 'EmployeeDAO'
+1638535650484	Rename type 'EmployeeEntity'
+1638535676336	Rename type 'ProjectemployeeApplication'
+1638535684940	Rename type 'ProjectemployeeApplicationTests'
+1638535706706	Rename type 'EmployeeRepository'
+1638535723207	Rename type 'EmployeeServices'
+1638535756597	Rename package 'com.javatraining.controllers'
+1638535774105	Rename package 'com.javatraining.dao'
+1638535787313	Rename package 'com.javatraining.entity'
+1638535814372	Rename package 'com.javatraining.projectemployee'
+1638535831981	Rename package 'com.javatraining.repository'
+1638535847743	Rename package 'com.javatraining.services'
+1638538957967	Rename resource 'deletecustomer.jsp'
+1638539723486	Rename type 'SaveCustomerController'
+1638540524453	Copy compilation unit
+1638540530835	Delete element
+1638541040519	Copy compilation unit
+1638541044385	Delete element
+1638615251970	Delete element
+1638624871778	Rename resource 'searchallcustomer.jsp'

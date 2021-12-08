@@ -1,0 +1,9 @@
+package com.customer.projectcustomer;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.customer.entity.CountryEntity;
+
+public interface CountryRepo extends CrudRepository<CountryEntity, Integer>{
+
+}

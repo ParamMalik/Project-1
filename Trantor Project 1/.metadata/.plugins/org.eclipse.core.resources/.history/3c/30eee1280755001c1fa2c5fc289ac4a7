@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="index.css">
+<title>Remove Employee</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h2>Remove Customer Form</h2>
+
+    </div>
+    <div class="topnav">
+        <a class="active" href="welcome">Home</a>
+        <a href="add">Add Customer</a>
+        <a href="remove">Search Customer</a>
+        <a href="update">Update Customer</a>
+        <a href="update">Search All Customer</a>
+		
+      </div>
+	<div class="bodydiv">
+		<form action="delete" method="post">
+			
+			
+            <div class="leftbox">
+			<div>
+				<label id="labelmargin" style="margin-right: 30px;">Customer No   : </label><input id="inputdefault" type="text" name="customerNo" placeholder="Number">
+			</div>
+			<div>
+				<label id="labelmargin">Customer Name : </label><input id="inputdefault" type="text"
+					name="customerName" placeholder="Name">
+			</div>
+			<div>
+				<label  id="labelmargin" style="margin-right: 20px;">Customer Type : </label> <select name="customerType"
+                id="inputdefault" placeholder="Type">
+					<option value="none">Select</option>
+					<option value="newcustomer">New</option>
+					<option value="regularcustomer">Regular</option>
+
+				</select>
+			</div>
+			<div >
+				<label id="labelmargin">Customer Phone : </label><input id="inputdefault" type="text"
+					name="customerPhone" placeholder="Phone">
+			</div>
+        </div>
+        	
+        <div id="button">
+            <button class="button button1"  type="submit">Remove Customer</button>
+        </div>
+    
+       
+ 
+
+		</form>
+        
+       
+	</div>
+
+</body>
+</html>

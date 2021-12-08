@@ -1,0 +1,77 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Details</title>
+</head>
+<body>
+	<form action="update" method="post">
+		<h2>Add Customer Form</h2>
+		<div>
+			<label>Customer No : </label><input type="text" name="customerNo">
+		</div>
+		<div>
+			<label>Customer Name : </label><input type="text" name="customerName">
+		</div>
+		<div>
+			<label>Customer Type : </label> <select name="customerType"
+				id="customer">
+				<option value="none">Select</option>
+				<option value="newcustomer">New</option>
+				<option value="regularcustomer">Regular</option>
+
+			</select>
+		</div>
+		<div>
+			<label>Customer Phone : </label><input type="text"
+				name="customerPhone">
+		</div>
+		<div>
+			<label>Street </label><input type="text" name="street">
+		</div>
+		<div>
+			<label>City : </label><input type="text" name="city">
+		</div>
+
+		<div>
+			<label>Country : </label><select name="country" id="country">
+				<option value="none">Select</option>
+				<option value="india">India</option>
+				<option value="usa">USA</option>
+
+			</select>
+		</div>
+		<div>
+			<label>State : </label><select name="state" id="state">
+				<option value="none">Select</option>
+				<option value="uttarpradesh">UP</option>
+				<option value="maharashtra">Maharashtra</option>
+
+			</select>
+		</div>
+		<div>
+			<label>Created By : </label><input type="text" name="createdBy">
+		</div>
+		<div>
+			<label>Created On : </label><input type="date" name="createdOn">
+		</div>
+		<div>
+			<label>Updated By : </label><input type="text" name="updatedBy">
+		</div>
+		<div>
+			<label>Updated On : </label><input type="date" name="updatedOn">
+		</div>
+
+		<div>
+			<button type="submit">Update Customer</button>
+		</div>
+		<div>
+			<button type="submit"><a href="welcome">Home</a></button>
+		</div>
+
+	</form>
+
+</body>
+</html>

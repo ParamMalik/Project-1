@@ -1,0 +1,29 @@
+package com.customer.entity;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "CUSTOMER_COUNTRY_TBL")
+public class CountryEntity {
+
+	private Integer countryID;
+	private String countryCode;
+	private String countryName;
+	private String createdBy;
+	private Date createdOn;
+	private String updatedBy;
+	private Date updatedOn;
+
+}

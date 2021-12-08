@@ -1,0 +1,15 @@
+package com.javatraining.dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.javatraining.repository.EmployeeRepository;
+
+@Repository
+public class EmployeeDAO {
+	
+	@Autowired
+	private EmployeeRepository employeeRepository;
+	
+
+}

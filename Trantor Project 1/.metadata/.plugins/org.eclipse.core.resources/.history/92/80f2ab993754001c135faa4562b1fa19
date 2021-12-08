@@ -1,0 +1,9 @@
+package com.javatraining.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.customer.entity.CustomerEntity;
+
+public interface CustomerRepository extends CrudRepository<CustomerEntity, Integer> {
+
+}

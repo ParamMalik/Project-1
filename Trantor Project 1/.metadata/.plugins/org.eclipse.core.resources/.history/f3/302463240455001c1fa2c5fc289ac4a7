@@ -1,0 +1,33 @@
+package com.customer.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.customer.entity.CustomerEntity;
+import com.customer.services.CustomerServices;
+
+@Controller
+@RequestMapping(path = "/search")
+public class SearchCustomerController {
+
+	@Autowired
+	private CustomerServices customerServices;
+
+	@RequestMapping(method = RequestMethod.GET)
+	public String searchForm() {
+		return "searchcustomer.jsp";
+	}
+
+	@RequestMapping(method = RequestMethod.POST)
+	public String searchDisplay(CustomerEntity customer) {
+		customerServices.searchCustomer();
+		return "searchcustomerdisplay.jsp";
+	}
+	
+	public String searchallDisplay(CustomerEntity customer) {
+		return "searchallcustomerdisplay.jsp";
+	}
+
+}

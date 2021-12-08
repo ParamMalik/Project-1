@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+D:\JAVA TRAINING (Trantor)\PROJECTS\Trantor Project 1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1379936966.index
+\projectemployee\src\main\java
+D:\JAVA TRAINING (Trantor)\PROJECTS\Trantor Project 1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2033309944.index
+\projectcustomer\src\main\java

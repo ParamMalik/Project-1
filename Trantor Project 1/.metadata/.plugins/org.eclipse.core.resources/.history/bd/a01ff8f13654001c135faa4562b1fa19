@@ -1,0 +1,12 @@
+package com.javatraining.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.javatraining.services.EmployeeServices;
+
+@Controller
+public class DeleteEmployeeController {
+	@Autowired
+	private EmployeeServices employeeServices;
+}

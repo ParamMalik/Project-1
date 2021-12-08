@@ -1,0 +1,9 @@
+package com.javatraining.repository;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.javatraining.entity.EmployeeEntity;
+
+public interface EmployeeRepository extends CrudRepository<EmployeeEntity, Integer> {
+
+}
